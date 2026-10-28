@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=8fd63603-a07b-4a7c-9021-cc2db5fe3cca
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>新生兒投保教戰手冊</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FAF6F0;--bg2:#F3ECE3;--ink:#2B2A33;--mute:#6E6A66;--acc:#C8693A;--acc2:#E9B98F;--line:#E6DCCF}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:"Noto Sans TC","PingFang TC",sans-serif;background:var(--bg);color:var(--ink);line-height:1.8;font-size:16px}
+.serif,h1,h2{font-family:"Noto Serif TC","Songti TC",serif;font-weight:600;letter-spacing:.01em}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:10;background:rgba(250,246,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:24px;height:64px}
+.logo{font-family:"Noto Serif TC",serif;font-weight:700;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.logo i{width:22px;height:22px;border-radius:50% 50% 50% 0;background:var(--acc);display:inline-block}
+nav ul{list-style:none;display:flex;gap:22px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+nav ul::-webkit-scrollbar{display:none}
+nav a{color:var(--mute);text-decoration:none;font-size:.9rem;white-space:nowrap}nav a:hover{color:var(--acc)}
+.eyebrow{color:var(--acc);font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.eyebrow:after{content:"";width:36px;height:1px;background:var(--acc)}
+.hero{display:grid;grid-template-columns:1fr 1.1fr;min-height:560px;background:linear-gradient(90deg,#F6EEE4,#F1E6DA)}
+.hero .txt{padding:80px 48px 80px max(24px,calc((100vw - 1180px)/2 + 24px));display:flex;flex-direction:column;justify-content:center}
+.hero h1{font-size:clamp(2.3rem,5vw,3.8rem);line-height:1.2;margin-bottom:22px}
+.hero h1 em{color:var(--acc);font-style:italic}
+.hero p{color:var(--mute);max-width:440px}
+.hero .img{background:url(img/nursery-crib.jpg) center/cover}
+.pill{display:inline-flex;align-items:center;gap:8px;background:var(--acc);color:#fff;border-radius:999px;padding:10px 22px;font-size:.9rem;text-decoration:none;margin-top:28px;width:max-content}
+.pill.ghost{background:#fff;color:var(--acc)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line)}
+.stat{position:relative;padding:44px 28px 36px;border-right:1px solid var(--line);overflow:hidden}
+.stat:last-child{border-right:0}
+.stat .big{position:absolute;right:16px;top:-10px;font-family:"Noto Serif TC",serif;font-size:7rem;color:var(--ink);opacity:.06;line-height:1}
+.stat b{font-family:"Noto Serif TC",serif;font-size:2rem;font-weight:600;display:block}
+.stat b small{font-size:1rem;color:var(--acc);margin-left:4px}
+.stat span{color:var(--mute);font-size:.9rem}
+section{padding:88px 0;border-bottom:1px solid var(--line)}
+section:nth-of-type(even){background:var(--bg2)}
+h2{font-size:clamp(1.8rem,3.4vw,2.6rem);line-height:1.3;margin-bottom:12px}
+.sub{font-family:"Noto Serif TC",serif;font-size:1.4rem;margin:40px 0 18px}
+.lead{color:var(--mute);margin-bottom:32px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.split.rev .media{order:-1}
+.media{border-radius:4px;aspect-ratio:5/4;background-size:cover;background-position:center;position:sticky;top:96px}
+.grid2,.grid3{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.grid3{grid-template-columns:repeat(3,1fr)}
+.card{background:#fff;border:1px solid var(--line);border-radius:4px;padding:26px 28px;margin-bottom:0}
+.grid1 .card{margin-bottom:20px}
+.card h3{font-family:"Noto Serif TC",serif;font-size:1.2rem;margin-bottom:10px}
+.card ul,.card ol{padding-left:20px;margin:6px 0}.card p+p{margin-top:8px}
+.lbl{display:inline-block;font-size:.75rem;color:var(--acc);border:1px solid var(--acc);border-radius:999px;padding:0 10px;margin-right:8px;font-weight:700}
+.lbl.g{background:var(--acc);color:#fff}
+.src{font-size:.9rem;color:var(--mute);margin-top:10px;padding-left:14px;border-left:2px solid var(--acc2)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.tag{border:1px solid var(--acc);color:var(--acc);border-radius:999px;padding:2px 14px;font-size:.85rem}
+.note{margin-top:28px;padding:20px 24px;background:#fff;border-left:3px solid var(--acc);color:var(--ink)}
+.hint{display:block;color:var(--mute);font-size:.9rem;margin:-4px 0 24px}
+.timeline{position:relative;padding-left:56px}
+.timeline:before{content:"";position:absolute;left:19px;top:8px;bottom:8px;width:1px;background:var(--acc)}
+.step{position:relative;padding:0 0 32px}
+.step:before{content:"0" attr(data-n);position:absolute;left:-56px;top:0;width:40px;height:40px;border-radius:50%;background:var(--bg);border:1px solid var(--acc);color:var(--acc);font-family:"Noto Serif TC",serif;display:flex;align-items:center;justify-content:center;font-size:.9rem}
+section:nth-of-type(even) .step:before{background:var(--bg2)}
+.step b{display:block;font-family:"Noto Serif TC",serif;font-size:1.15rem;margin-bottom:4px}
+.step ul,.step ol{padding-left:20px;color:#45434a}
+.warn{display:inline-block;margin-top:10px;font-size:.88rem;color:var(--acc);border:1px solid var(--acc);border-radius:999px;padding:3px 14px}
+ul.docs{list-style:none;counter-reset:d}
+ul.docs li{counter-increment:d;padding:18px 0 18px 56px;border-bottom:1px solid var(--line);position:relative}
+ul.docs li:before{content:"0" counter(d);position:absolute;left:0;top:12px;font-family:"Noto Serif TC",serif;font-size:1.6rem;color:var(--acc);opacity:.7}
+.qa .q{font-family:"Noto Serif TC",serif;font-size:1.15rem;font-weight:600;margin-bottom:10px}
+.qa .q:before{content:"Q.";color:var(--acc);margin-right:8px;font-style:italic}
+.qa .a{color:#45434a}
+section.band{background:var(--acc);color:#fff;border:0}
+.band .split{align-items:center}
+.band .eyebrow{color:#FBE3D2}.band .eyebrow:after{background:#FBE3D2}
+.band .media{background-image:url(img/nursery-blanket.jpg);position:static;box-shadow:0 0 0 1px rgba(255,255,255,.2)}
+.trans{list-style:none;margin-top:20px}.trans li{padding:14px 0;border-top:1px solid rgba(255,255,255,.3)}
+footer{padding:48px 0;font-size:.85rem;color:var(--mute)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+@media(max-width:860px){
+ .hero{grid-template-columns:1fr}.hero .img{min-height:300px;order:-1}.hero .txt{padding:44px 24px 52px}
+ .split,.grid2,.grid3{grid-template-columns:1fr;gap:20px}.split{gap:32px}.media{position:static;aspect-ratio:16/10}
+ .split.rev .media{order:0}
+ .stats{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid var(--line);padding:28px 24px}
+ section{padding:60px 0}.card{padding:22px}
+ nav .wrap{gap:14px}nav ul{gap:16px}
+}
+</style>
+</head><body>
+<nav><div class="wrap"><a class="logo" href="#top" style="color:inherit;text-decoration:none"><i></i>教戰手冊</a><ul><li><a href="#timeline">投保時程</a></li><li><a href="#docs">準備文件</a></li><li><a href="#plans">險種規劃</a></li><li><a href="#order">建議投保順序</a></li><li><a href="#talk">溝通重點</a></li><li><a href="#faq">客戶問題</a></li><li><a href="#chat">聊天指南</a></li></ul></div></nav>
+<header class="hero" id="top"><div class="txt"><div class="eyebrow">Newborn Insurance Playbook</div>
+<h1>新生兒<br>投保<em>教戰</em>手冊</h1>
+<p>協助新手爸媽規劃寶寶保障的重點整理與溝通要點。<br>原則：溫和、專業、不推銷，保險是工具。</p>
+<a class="pill" href="#timeline">開始閱讀 →</a></div><div class="img"></div></header>
+<div class="stats wrap" style="padding:0">
+<div class="stat"><span class="big">01</span><b>22<small>項</small></b><span>公費篩檢</span></div>
+<div class="stat"><span class="big">02</span><b>10<small>天</small></b><span>黃金投保期</span></div>
+<div class="stat"><span class="big">03</span><b>37週<small>／2,500g</small></b><span>投保條件</span></div></div>
+<main>
+<section id="timeline"><div class="wrap split"><div><div class="eyebrow">01 · Timeline</div><h2>投保時程</h2><p class=lead>從預產期前到保單生效後，每個階段該提醒爸媽的事。</p>
+<div class="timeline">
+<div class="step" data-n="1"><b>出生前（預產期前 1 個月，或提早 2～3 個月）</b>
+<ul><li>和爸媽一起規劃保單、提醒先想好寶寶名字。</li>
+<li>各公司商品隨時可能調整、停售或改核保規則，每月方案不一定相同。</li>
+<li>部分公司有胎兒投保，可涵蓋先天性疾病，但條件不一（如懷孕週數、產檢有無異常），需先確認。</li></ul></div>
+<div class="step" data-n="2"><b>出生時</b>
+<ul><li>公費 22 項新生兒篩檢（2026/7/1 起新增脊髓性肌肉萎縮症 SMA，檢驗費改為全額補助）：出生 48 小時內採血，報告約出生後 7～10 天出爐。</li>
+<li>依金管會規定，篩檢本身不影響投保權益，但保險公司仍可要求延期承保觀察。</li>
+<li>建議在報告出爐前完成投保，核保較順利；若報告異常後才投保，可能被拒保、除外或加費。</li></ul></div>
+<div class="step" data-n="3"><b>出生後 10 天內（黃金投保期，篩檢報告出爐前）</b>
+<p style="margin-top:4px"><b>投保必備條件：</b></p>
+<ol style="padding-left:20px"><li>寶寶已離院（轉入月子中心也視為已離院）。</li>
+<li>已取名、完成報戶口取得身分證字號。</li>
+<li>體況符合基本標準：通常需懷孕週數滿 37 週以上、出生體重 2,500 公克以上（依各公司核保規定）。</li></ol>
+<ul><li>報戶口文件：寶寶名字、出生證明書正本、戶口名簿、申請人身分證、印章或簽名。</li>
+<li>早產、體重不足等不符合者，需等生長曲線達約 15～85 百分位再嘗試投保（依各公司核保）。</li>
+<li>最晚盡量 6 個月內完成：約 6 個月大母體抗體消失、自身免疫尚未成熟，是免疫力空窗期。</li></ul>
+<div class="warn">各公司可投保日齡規定不同，請確認。</div></div>
+<div class="step" data-n="4"><b>保單生效後 30～90 天</b>
+<ul><li>疾病等待期（如實支 30 天、癌症 90 天）。</li>
+<li>自費檢查（尤其超音波）容易篩出卵圓孔未閉合等狀況，可能需等閉合後約 3～12 個月並檢附文件才能投保；建議待保單下來且過等待期再做，實際以醫師建議為主。</li></ul></div>
+</div>
+<div class="note">提醒爸媽趁寶寶健康、尚無就醫紀錄時盡早規劃，既往症或先天異常可能被除外或拒保。</div>
+</div><div class="media" style="background-image:url(img/nursery-shelf.jpg)"></div></div></section><section id="docs"><div class="wrap split rev"><div><div class="eyebrow">02 · Documents</div><h2>投保準備文件</h2>
+<small class="hint">（以各公司要求為準）</small>
+<ul class="docs">
+<li>寶寶戶籍資料或出生證明</li>
+<li>父母（要保人）身分證件</li>
+<li>兒童健康手冊／出生健康狀況資料（供據實告知）</li>
+<li>扣款帳戶或信用卡</li>
+</ul>
+</div><div class="media" style="background-image:url(img/nursery-crib.jpg)"></div></div></section><section id="plans"><div class="wrap"><div class="eyebrow">03 · Coverage</div><h2>險種規劃與業界常見建議額度</h2>
+<small class="hint">以下額度為業界常見建議，非公司標準，請依家庭預算與需求調整。</small>
+<div class="grid2"><div class="card"> <h3>醫療險</h3>
+<p><span class="lbl">為了解決</span>高額自費、單人房選擇權、父母請假的薪資損失。</p>
+<p><span class="lbl g">建議</span>實支雜費 30 萬以上（也有建議 30～60 萬）＋補定額住院日額；部分實支有轉換日額功能。</p>
+<p class="src">口訣：醫院花費靠實支，多理賠靠定額。</p></div>
+<div class="card"> <h3>意外險</h3>
+<p><span class="lbl">為了解決</span>磕碰受傷醫療費、請假薪資損失、意外失能長照。</p>
+<p><span class="lbl g">建議</span></p><ul><li>意外失能一次金至少 200 萬</li><li>意外實支建議保額 10 萬</li><li>意外住院日額 1,000～2,000 元</li><li>重大燒燙傷可規劃約 200 萬</li></ul>
+<p class="src">兒童意外八成以上發生在家中。</p></div>
+<div class="card"> <h3>癌症險</h3>
+<p><span class="lbl">為了解決</span>常見兒童癌症：白血病、腦瘤、惡性淋巴瘤、神經母細胞瘤、生殖細胞腫瘤。</p>
+<p><span class="lbl g">建議</span>一次金型優先於療程型。</p></div>
+<div class="card"> <h3>重大傷病險</h3>
+<p><span class="lbl">為了解決</span>對應健保重大傷病範圍（22 大類、數百項），取得重大傷病證明即可理賠，理賠範圍跟著健保更新。幼童常見領證原因：惡性腫瘤、川崎氏症、紅斑性狼瘡、自閉症、亞斯伯格症。</p>
+<p><span class="lbl g">建議</span>一次金至少 100 萬；重大傷病優先於重大疾病、特定傷病。</p></div>
+<div class="card"> <h3>失能／長照險</h3>
+<p><span class="lbl g">建議</span>可規劃一次金百萬以上。</p></div>
+</div></div></section><section id="order"><div class="wrap split rev"><div><div class="eyebrow">04 · Priority</div><h2>建議投保順序</h2>
+<div class="timeline">
+<div class="step" data-n="1"><b>醫療</b>實支實付／住院日額，寶寶最常用到。</div>
+<div class="step" data-n="2"><b>意外</b>含意外醫療、意外失能。</div>
+<div class="step" data-n="3"><b>癌症／重大傷病</b></div>
+<div class="step" data-n="4"><b>失能長照／其他視預算</b>如教育金規劃。</div>
+</div>
+</div><div class="media" style="background-image:url(img/nursery-shelf.jpg)"></div></div></section><section id="talk"><div class="wrap"><div class="eyebrow">05 · Key Points</div><h2>溝通重點</h2><div class="grid2">
+<div class="card"> <h3>不需要建議壽險</h3>
+<p>依保險法，未滿 15 歲身故不給付保險金，僅退還已繳保費加利息。說明時將重點放在醫療、意外、癌症／重大傷病。</p></div>
+<div class="card"> <h3>健康告知務必據實</h3>
+<p>主動提醒爸媽據實告知寶寶健康狀況，避免日後理賠爭議。</p></div>
+<div class="card"> <h3>父母先保好自己</h3>
+<p>父母是家中經濟支柱，建議先檢視自身保障；並可在寶寶保單附加要保人豁免附約，若父母因意外或疾病失能無力繳費，寶寶保單仍維持有效（豁免條件依條款）。</p></div>
+<div class="card"> <h3>不必一次到位</h3>
+<p>保單可隨成長階段調整：幼兒園、小學意外風險較高，中學通勤與運動也要注意。</p></div>
+</div><div class="note">話術小技巧：可提到用中央與縣市的育兒津貼來繳寶寶保費，作為輕鬆的溝通切入點。</div>
+</div></section><section id="faq"><div class="wrap"><div class="eyebrow">06 · FAQ</div><h2>常見客戶問題與回應話術</h2><div class="grid2">
+<div class="card qa"><p class="q">寶寶這麼小，需要保嗎？</p>
+<p class="a">「寶寶小時候比較容易感冒、發燒或需要住院觀察，趁現在健康時規劃，通常比較容易投保。當然還是看家裡的需求和預算，我們可以先從最基本的開始了解。」</p></div>
+<div class="card qa"><p class="q">為什麼不先買壽險？</p>
+<p class="a">「依保險法，未滿 15 歲身故不給付保險金，只會退還已繳保費加利息，所以寶寶階段把預算放在醫療、意外會更實用。」</p></div>
+<div class="card qa"><p class="q">有健保還不夠嗎？</p>
+<p class="a">「健保是很好的基本保障，商業保險是補充，例如健保不給付的自費項目或住院期間的開銷。可以先看看家裡的狀況，再決定需要補多少。」</p></div>
+<div class="card qa"><p class="q">出生時有黃疸或住過保溫箱，還能保嗎？</p>
+<p class="a">「不一定不能保，最重要的是據實告知，由保險公司核保評估，結果可能是正常承保，也可能除外或加費。我會陪您一起把資料準備清楚。」</p></div>
+</div></div></section><section id="chat"><div class="wrap"><div class="eyebrow">07 · Conversation</div><h2>跟新手爸媽聊天指南</h2><div class="grid1">
+<div class="card"> <h3>聊天注意事項</h3>
+<ul>
+<li>先關心媽媽與寶寶的狀況，不要一開口就談保單。</li>
+<li>配合寶寶作息：訊息精簡、避開深夜與清晨，用 LINE 留言讓對方有空再回。</li>
+<li>尊重育兒方式（母乳／配方奶、坐月子方式等），不評論。</li>
+<li>避免拿別人家寶寶的發展來比較。</li>
+<li>留意產後情緒，多聽少說，必要時溫和提醒尋求專業協助。</li>
+<li>不講嚇人的理賠案例製造焦慮。</li>
+<li>探視不空手也不過重；留意衛生：洗手、生病不探視、不隨意抱寶寶。</li>
+<li>健康問題不提供醫療建議，建議詢問小兒科醫師。</li>
+<li>爸爸也要納入對話，別只跟媽媽聊。</li>
+</ul></div>
+</div><h3 class="sub">聊天話題</h3><div class="grid3">
+<div class="card"> <h3>產後與坐月子</h3><p class="src">「最近身體恢復得還好嗎？月子是在家坐還是去月子中心？」</p></div>
+<div class="card"> <h3>寶寶作息與睡眠</h3><p class="src">「寶寶晚上大概幾個小時醒一次？你們有輪流顧嗎？」</p></div>
+<div class="card"> <h3>取名與報戶口</h3><p class="src">「名字想好了嗎？有沒有什麼特別的意義？」</p><p class="src">「戶口報了嗎？需要的文件我可以幫你整理一份。」</p></div>
+<div class="card"> <h3>篩檢與疫苗施打</h3><p class="src">「新生兒篩檢結果出來了嗎？一切都順利嗎？」</p><p class="src">「最近是不是快打第一劑疫苗了？」</p></div>
+<div class="card"> <h3>育兒津貼與各項補助申請</h3><p class="src">「中央和縣市的育兒津貼申請了嗎？要不要一起看一下流程？」</p></div>
+<div class="card"> <h3>母嬰用品好物</h3><p class="src">「最近有沒有哪個用品覺得特別好用，或買了後悔的？」</p></div>
+<div class="card"> <h3>托嬰與保母</h3><p class="src">「之後回去上班，寶寶會給家人帶、找保母還是托嬰中心？」</p></div>
+<div class="card"> <h3>寶寶成長里程碑</h3><p class="src">「快滿月了吧？有打算辦滿月、收涎嗎？」</p><p class="src">「抓周想準備哪些東西呀？」</p></div>
+<div class="card"> <h3>爸媽自己的休息與工作平衡</h3><p class="src">「你們自己有沒有休息到？育嬰假打算怎麼安排？」</p></div>
+<div class="card"> <h3>家庭理財與教育基金</h3><p class="src">「有了寶寶之後，家裡的開銷安排有什麼變化嗎？」</p></div>
+</div></div></section><section class="band"><div class="wrap split"><div><div class="eyebrow">From Chat to Coverage</div><h2>從聊天自然帶到保障</h2>
+<ul class="trans">
+<li>聊篩檢／報戶口 →「報完戶口、篩檢報告出爐前，就是寶寶的黃金投保期，要不要我先幫你們整理重點？」</li>
+<li>聊育兒津貼 →「不少爸媽會把育兒津貼拿來繳寶寶的保費，等於不用額外多一筆開銷。」</li>
+<li>聊教育基金／家庭理財 →「在規劃寶寶的同時，也可以順便看看爸媽自己的保障夠不夠。」</li>
+</ul></div><div class="media"></div></div></section>
+</main>
+<footer><div class="wrap"><span class="logo"><i></i>新生兒投保教戰手冊</span><p class="disclaimer">內容僅供參考，實際以各公司條款與核保規定為準。</p></div></footer>
+</body>
+</html>
