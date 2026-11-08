@@ -16,10 +16,10 @@ body{font-family:"Noto Sans TC","PingFang TC",sans-serif;background:var(--bg);co
 .serif,h1,h2{font-family:"Noto Serif TC","Songti TC",serif;font-weight:600;letter-spacing:.01em}
 .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
 nav{position:sticky;top:0;z-index:10;background:rgba(250,246,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;align-items:center;gap:24px;height:64px}
+nav .wrap{display:flex;align-items:center;gap:24px;height:64px;min-width:0}
 .logo{font-family:"Noto Serif TC",serif;font-weight:700;display:flex;align-items:center;gap:8px;white-space:nowrap}
 .logo i{width:22px;height:22px;border-radius:50% 50% 50% 0;background:var(--acc);display:inline-block}
-nav ul{list-style:none;display:flex;gap:22px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+nav ul{list-style:none;display:flex;gap:22px;margin-left:auto;overflow-x:auto;scrollbar-width:none;min-width:0}
 nav ul::-webkit-scrollbar{display:none}
 nav a{color:var(--mute);text-decoration:none;font-size:.9rem;white-space:nowrap}nav a:hover{color:var(--acc)}
 .eyebrow{color:var(--acc);font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;display:flex;align-items:center;gap:12px;margin-bottom:14px}
@@ -39,7 +39,8 @@ nav a{color:var(--mute);text-decoration:none;font-size:.9rem;white-space:nowrap}
 .stat b{font-family:"Noto Serif TC",serif;font-size:2rem;font-weight:600;display:block}
 .stat b small{font-size:1rem;color:var(--acc);margin-left:4px}
 .stat span{color:var(--mute);font-size:.9rem}
-section{padding:88px 0;border-bottom:1px solid var(--line)}
+section{padding:88px 0;border-bottom:1px solid var(--line);scroll-margin-top:76px}
+#top{scroll-margin-top:76px}
 section:nth-of-type(even){background:var(--bg2)}
 h2{font-size:clamp(1.8rem,3.4vw,2.6rem);line-height:1.3;margin-bottom:12px}
 .sub{font-family:"Noto Serif TC",serif;font-size:1.4rem;margin:40px 0 18px}
@@ -55,6 +56,8 @@ h2{font-size:clamp(1.8rem,3.4vw,2.6rem);line-height:1.3;margin-bottom:12px}
 .lbl{display:inline-block;font-size:.75rem;color:var(--acc);border:1px solid var(--acc);border-radius:999px;padding:0 10px;margin-right:8px;font-weight:700}
 .lbl.g{background:var(--acc);color:#fff}
 .src{font-size:.9rem;color:var(--mute);margin-top:10px;padding-left:14px;border-left:2px solid var(--acc2)}
+a.out{color:var(--acc);text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.src a.out{display:inline-block;margin:4px 14px 0 0}
 .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.tag{border:1px solid var(--acc);color:var(--acc);border-radius:999px;padding:2px 14px;font-size:.85rem}
 .note{margin-top:28px;padding:20px 24px;background:#fff;border-left:3px solid var(--acc);color:var(--ink)}
 .hint{display:block;color:var(--mute);font-size:.9rem;margin:-4px 0 24px}
@@ -89,7 +92,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 }
 </style>
 </head><body>
-<nav><div class="wrap"><a class="logo" href="#top" style="color:inherit;text-decoration:none"><i></i>教戰手冊</a><ul><li><a href="#timeline">投保時程</a></li><li><a href="#docs">準備文件</a></li><li><a href="#plans">險種規劃</a></li><li><a href="#order">建議投保順序</a></li><li><a href="#talk">溝通重點</a></li><li><a href="#faq">客戶問題</a></li><li><a href="#chat">聊天指南</a></li></ul></div></nav>
+<nav><div class="wrap"><a class="logo" href="#top" style="color:inherit;text-decoration:none"><i></i>教戰手冊</a><ul><li><a href="#timeline">投保時程</a></li><li><a href="#docs">準備文件</a></li><li><a href="#plans">險種規劃</a></li><li><a href="#order">建議投保順序</a></li><li><a href="#talk">溝通重點</a></li><li><a href="#faq">客戶問題</a></li><li><a href="#chat">聊天指南</a></li><li><a href="#todo">待產待辦</a></li></ul></div></nav>
 <header class="hero" id="top"><div class="txt"><div class="eyebrow">Newborn Insurance Playbook</div>
 <h1>新生兒<br>投保<em>教戰</em>手冊</h1>
 <p>協助新手爸媽規劃寶寶保障的重點整理與溝通要點。<br>原則：溫和、專業、不推銷，保險是工具。</p>
@@ -205,6 +208,47 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 <li>聊育兒津貼 →「不少爸媽會把育兒津貼拿來繳寶寶的保費，等於不用額外多一筆開銷。」</li>
 <li>聊教育基金／家庭理財 →「在規劃寶寶的同時，也可以順便看看爸媽自己的保障夠不夠。」</li>
 </ul></div><div class="media"></div></div></section>
+<section id="todo"><div class="wrap"><div class="eyebrow">08 · Checklist</div><h2>待產與出生後待辦</h2>
+<p class="lead">陪爸媽把待產、出院和出生後要辦的事整理成清單。保障怎麼談，仍用前面的投保章節。各項給付能否申請、金額多少，以主管機關和戶籍地當時的規定為準。</p>
+<div class="grid2">
+<div class="card"><h3>待產包與證件</h3>
+<ul>
+<li>入院前先問產院：衣物、尿布、清潔與哺乳用品，哪些病房已經備好。若會去月子中心，同樣先問中心提供哪些，再決定自備內容。</li>
+<li>證件和日用品分開放。建議帶孕產婦身分證、健保卡，以及產檢用的媽媽手冊；陪產者證件依院方要求。</li>
+<li>自備項目依家庭狀況和院方最新清單增減，入院前再核對一次即可。</li>
+</ul></div>
+<div class="card"><h3>出院時向醫院領回</h3>
+<ul>
+<li>出生證明書。</li>
+<li>兒童健康手冊。</li>
+<li>新生兒篩檢的採檢說明或留存單。</li>
+<li>出院摘要；住院期間若已接種疫苗，一併核對接種紀錄。</li>
+<li>離開前看一次新生兒姓名、出生時間與父母資料。</li>
+</ul>
+<div class="src"><a class="out" href="https://www.hpa.gov.tw/Pages/EBook.aspx?nodeid=1139" target="_blank" rel="noopener noreferrer">國民健康署｜兒童健康手冊</a><a class="out" href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1140&pid=6577" target="_blank" rel="noopener noreferrer">國民健康署｜新生兒先天性代謝異常疾病篩檢項目</a></div>
+</div></div>
+<h3 class="sub">出生後建議辦理</h3>
+<small class="hint">順序可配合戶所與醫院作業調整。金額、級距與入帳帳戶請看各窗口最新說明。</small>
+<div class="timeline">
+<div class="step" data-n="1"><b>出生登記</b>
+<p>內政部戶政司申辦須知載明，出生登記應自出生日起 60 日內申請。常見文件為出生證明書正本、戶口名簿、申請人身分證，以及印章或簽名；戶所若還要其他證明，依現場告知補件。逾期仍應盡快到戶政事務所辦理。父母均為在臺現有戶籍國民、新生兒在臺出生且與父或母同戶時，可持自然人憑證於期限內使用戶政司線上申辦。</p>
+<div class="src"><a class="out" href="https://www.ris.gov.tw/documents/html/2/3/1/379.html" target="_blank" rel="noopener noreferrer">內政部戶政司｜出生登記</a><a class="out" href="https://www.ris.gov.tw/app/portal/852" target="_blank" rel="noopener noreferrer">內政部戶政司｜線上申辦出生登記</a></div></div>
+<div class="step" data-n="2"><b>新生兒健保加保與健保卡</b>
+<p>辦理出生登記時，可請戶政事務所說明健保署的跨機關服務，包含依附父或母投保，以及申領健保卡。也可以稍後由父母的投保單位辦理。資格從哪一天起算、尚未領卡時如何就醫，以中央健康保險署最新說明為準。</p>
+<div class="src"><a class="out" href="https://www.nhi.gov.tw/ch/cp-4963-899d7-2669-1.html" target="_blank" rel="noopener noreferrer">中央健康保險署｜新生兒首次申請健保卡</a></div></div>
+<div class="step" data-n="3"><b>生育給付、育兒津貼與地方獎勵</b>
+<p>生育給付要看產婦參加的社會保險，勞保、國民年金與其他制度的窗口不相同。中央育兒津貼、縣市生育獎勵則另有設籍、所得與申請期限等條件。請按保險身分閱讀勞保局說明，並向寶寶戶籍地的社會局（處）或區公所查地方項目。資格與金額以這些官方規定為準。</p>
+<div class="src"><a class="out" href="https://www.bli.gov.tw/0004836.html" target="_blank" rel="noopener noreferrer">勞動部勞工保險局｜勞保生育給付</a><a class="out" href="https://www.bli.gov.tw/0109681.html" target="_blank" rel="noopener noreferrer">勞動部勞工保險局｜國民年金生育給付</a></div></div>
+<div class="step" data-n="4"><b>預防接種與後續健康紀錄</b>
+<p>接種與健兒門診，依兒童健康手冊和疾病管制署公告的兒童常規疫苗時程安排，並把日期留在手冊上。時程改版時以疾管署頁面為準。</p>
+<div class="src"><a class="out" href="https://www.cdc.gov.tw/Category/Page/TxRW-x3WzvPhvEtxM628GA" target="_blank" rel="noopener noreferrer">疾病管制署｜現行兒童預防接種時程</a></div></div>
+<div class="step" data-n="5"><b>幼兒帳戶（視家庭需要）</b>
+<p>請領前先看該項給付要匯入誰的帳戶。家庭若希望款項進入幼兒名下，再另行開戶。帳戶種類依該撥款單位的申辦說明。</p></div>
+<div class="step" data-n="6"><b>保障先討論，再對照本手冊</b>
+<p>預產期前可先談家庭預算、想準備的風險，以及取名和報戶口的時間。出生證明、戶籍資料與兒童健康手冊，之後辦投保常會用到。細節見<a class="out" href="#timeline">投保時程</a>、<a class="out" href="#docs">準備文件</a>與<a class="out" href="#order">建議投保順序</a>。能否承保、保障內容與等待期，以各公司當時條款及核保規定為準。</p></div>
+</div>
+<div class="note">本節只整理行政與準備事項。藥品與營養請依醫療人員說明，用品則依院方和月子中心的清單。申請給付前，請再看本節連結的主管機關，以及戶籍地政府的最新公告。</div>
+</div></section>
 </main>
 <footer><div class="wrap"><span class="logo"><i></i>新生兒投保教戰手冊</span><p class="disclaimer">內容僅供參考，實際以各公司條款與核保規定為準。</p></div></footer>
 </body>
