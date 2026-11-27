@@ -82,6 +82,16 @@ section.band{background:var(--acc);color:#fff;border:0}
 .trans{list-style:none;margin-top:20px}.trans li{padding:14px 0;border-top:1px solid rgba(255,255,255,.3)}
 footer{padding:48px 0;font-size:.85rem;color:var(--mute)}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+.stage h3{display:flex;width:max-content;align-items:center;background:var(--acc);color:#fff;border-radius:999px;padding:7px 18px;font-size:1.08rem;line-height:1.4;margin-bottom:14px;letter-spacing:.04em}
+#pregnancy .grid3{align-items:start}
+.stage ol{list-style:none;padding:0;margin:0}
+.stage>ol>li{padding:10px 0;border-bottom:1px solid var(--line);color:#45434a}
+.stage>ol>li:last-child{border-bottom:0;padding-bottom:0}
+.stage .n{color:var(--acc);font-family:"Noto Serif TC",serif;font-weight:700;margin-right:8px}
+.stage .tri{list-style:none;margin:10px 0 2px;padding:0}
+.stage .tri li{display:flex;flex-direction:column;gap:1px;margin:0 0 10px;padding:0 0 2px 12px;border-left:2px solid var(--acc2);border-bottom:0;line-height:1.65}
+.stage .tri b{display:block;color:var(--acc);font-weight:700;font-size:.92rem;letter-spacing:.04em;white-space:nowrap}
+.fine{color:var(--mute);font-size:.92rem;margin:-12px 0 28px}
 @media(max-width:860px){
  .hero{grid-template-columns:1fr}.hero .img{min-height:300px;order:-1}.hero .txt{padding:44px 24px 52px}
  .split,.grid2,.grid3{grid-template-columns:1fr;gap:20px}.split{gap:32px}.media{position:static;aspect-ratio:16/10}
@@ -92,17 +102,49 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 }
 </style>
 </head><body>
-<nav><div class="wrap"><a class="logo" href="#top" style="color:inherit;text-decoration:none"><i></i>教戰手冊</a><ul><li><a href="#timeline">投保時程</a></li><li><a href="#docs">準備文件</a></li><li><a href="#plans">險種規劃</a></li><li><a href="#order">建議投保順序</a></li><li><a href="#talk">溝通重點</a></li><li><a href="#faq">客戶問題</a></li><li><a href="#chat">聊天指南</a></li><li><a href="#todo">待產待辦</a></li></ul></div></nav>
+<nav><div class="wrap"><a class="logo" href="#top" style="color:inherit;text-decoration:none"><i></i>教戰手冊</a><ul><li><a href="#pregnancy">孕期風險</a></li><li><a href="#timeline">投保時程</a></li><li><a href="#docs">準備文件</a></li><li><a href="#plans">險種規劃</a></li><li><a href="#order">建議投保順序</a></li><li><a href="#talk">溝通重點</a></li><li><a href="#faq">客戶問題</a></li><li><a href="#chat">聊天指南</a></li><li><a href="#todo">待產待辦</a></li></ul></div></nav>
 <header class="hero" id="top"><div class="txt"><div class="eyebrow">Newborn Insurance Playbook</div>
 <h1>新生兒<br>投保<em>教戰</em>手冊</h1>
 <p>協助新手爸媽規劃寶寶保障的重點整理與溝通要點。<br>原則：溫和、專業、不推銷，保險是工具。</p>
-<a class="pill" href="#timeline">開始閱讀 →</a></div><div class="img"></div></header>
+<a class="pill" href="#pregnancy">開始閱讀 →</a></div><div class="img"></div></header>
 <div class="stats wrap" style="padding:0">
 <div class="stat"><span class="big">01</span><b>22<small>項</small></b><span>公費篩檢</span></div>
 <div class="stat"><span class="big">02</span><b>10<small>天</small></b><span>業界常稱黃金投保期</span></div>
 <div class="stat"><span class="big">03</span><b>37週<small>／2,500g</small></b><span>常見投保條件（依各公司核保）</span></div></div>
 <main>
-<section id="timeline"><div class="wrap split"><div><div class="eyebrow">01 · Timeline</div><h2>投保時程</h2><p class=lead>從預產期前到保單生效後，每個階段該提醒爸媽的事。</p>
+<section id="pregnancy"><div class="wrap">
+<div class="eyebrow">01 · Pregnancy</div>
+<h2>懷孕，是女性一生中最大的自然風險</h2>
+<p class="lead">談新生兒保障之前，先從媽媽的孕期風險看起：把懷孕前、懷孕中到產後可能面對的變化整理清楚，再陪爸媽看寶寶需要哪些準備。</p>
+<p class="fine">醫療風險請由醫師評估；能否承保與給付內容，依個人體況及各公司保單條款為準。</p>
+<div class="grid3">
+<div class="card stage"><h3>懷孕前</h3>
+<ol>
+<li><span class="n">①</span>既有保單的規劃</li>
+<li><span class="n">②</span>家族病史＆遺傳風險</li>
+<li><span class="n">③</span>既有慢性病與用藥</li>
+<li><span class="n">④</span>曾經的生產經驗</li>
+<li><span class="n">⑤</span>職業的風險評估</li>
+</ol></div>
+<div class="card stage"><h3>懷孕中</h3>
+<ol>
+<li><span class="n">①</span>孕期前中後
+<ul class="tri">
+<li><b>初期：</b>出血、小產或子宮外孕</li>
+<li><b>中期：</b>妊娠糖尿病、妊娠高血壓與子癇前症</li>
+<li><b>後期：</b>早產或臨時性剖腹產</li>
+</ul></li>
+<li><span class="n">②</span>胃食道逆流、胃脹氣（吃自費藥）</li>
+</ol></div>
+<div class="card stage"><h3>懷孕後</h3>
+<ol>
+<li><span class="n">①</span>產後憂鬱症及甲狀腺炎</li>
+<li><span class="n">②</span>併發免疫疾病及乳癌風險</li>
+<li><span class="n">③</span>產後失血及嚴重身故</li>
+</ol></div>
+</div>
+</div></section>
+<section id="timeline"><div class="wrap split"><div><div class="eyebrow">02 · Timeline</div><h2>投保時程</h2><p class=lead>從預產期前到保單生效後，每個階段該提醒爸媽的事。</p>
 <div class="timeline">
 <div class="step" data-n="1"><b>出生前（預產期前 1 個月，或提早 2～3 個月）</b>
 <ul><li>和爸媽一起規劃保單、提醒先想好寶寶名字。</li>
@@ -127,7 +169,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 <li>自費檢查若發現卵圓孔未閉合等狀況，可能被延期或除外，條件依各公司核保。檢查時機請依醫師建議，業務員不建議為了投保延後檢查。</li></ul></div>
 </div>
 <div class="note">提醒爸媽趁寶寶健康、尚無就醫紀錄時盡早規劃，既往症或先天異常可能被除外或拒保。</div>
-</div><div class="media" style="background-image:url(img/nursery-shelf.jpg)"></div></div></section><section id="docs"><div class="wrap split rev"><div><div class="eyebrow">02 · Documents</div><h2>投保準備文件</h2>
+</div><div class="media" style="background-image:url(img/nursery-shelf.jpg)"></div></div></section><section id="docs"><div class="wrap split rev"><div><div class="eyebrow">03 · Documents</div><h2>投保準備文件</h2>
 <small class="hint">（以各公司要求為準）</small>
 <ul class="docs">
 <li>寶寶戶籍資料或出生證明</li>
@@ -135,7 +177,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 <li>兒童健康手冊／出生健康狀況資料（供據實告知）</li>
 <li>扣款帳戶或信用卡</li>
 </ul>
-</div><div class="media" style="background-image:url(img/nursery-crib.jpg)"></div></div></section><section id="plans"><div class="wrap"><div class="eyebrow">03 · Coverage</div><h2>險種規劃與業界常見建議額度</h2>
+</div><div class="media" style="background-image:url(img/nursery-crib.jpg)"></div></div></section><section id="plans"><div class="wrap"><div class="eyebrow">04 · Coverage</div><h2>險種規劃與業界常見建議額度</h2>
 <small class="hint">以下額度為業界常見建議，非公司標準，請依家庭預算與需求調整。</small>
 <div class="grid2"><div class="card"> <h3>醫療險</h3>
 <p><span class="lbl">為了解決</span>高額自費、單人房選擇權、父母請假的薪資損失。</p>
@@ -154,14 +196,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 <p><span class="lbl g">建議</span>一次金至少 100 萬；重大傷病優先於重大疾病、特定傷病（依預算與條款比較）。</p><div class="src"><a class="out" href="https://www.nhi.gov.tw/ch/cp-6086-caf5f-2957-1.html" target="_blank" rel="noopener noreferrer">中央健康保險署｜重大傷病項目</a><a class="out" href="https://www.nhi.gov.tw/ch/dl-74911-9ea79f859a24431497ef0304ce4b7981-1.pdf" target="_blank" rel="noopener noreferrer">中央健康保險署｜重大傷病項目附表一</a></div></div>
 <div class="card"> <h3>失能／長照險</h3>
 <p><span class="lbl g">建議</span>可規劃一次金百萬以上。</p></div>
-</div></div></section><section id="order"><div class="wrap split rev"><div><div class="eyebrow">04 · Priority</div><h2>建議投保順序</h2>
+</div></div></section><section id="order"><div class="wrap split rev"><div><div class="eyebrow">05 · Priority</div><h2>建議投保順序</h2>
 <div class="timeline">
 <div class="step" data-n="1"><b>醫療</b>實支實付／住院日額，寶寶最常用到。</div>
 <div class="step" data-n="2"><b>意外</b>含意外醫療、意外失能。</div>
 <div class="step" data-n="3"><b>癌症／重大傷病</b></div>
 <div class="step" data-n="4"><b>失能長照／其他視預算</b>如教育金規劃。</div>
 </div>
-</div><div class="media" style="background-image:url(img/nursery-shelf.jpg)"></div></div></section><section id="talk"><div class="wrap"><div class="eyebrow">05 · Key Points</div><h2>溝通重點</h2><div class="grid2">
+</div><div class="media" style="background-image:url(img/nursery-shelf.jpg)"></div></div></section><section id="talk"><div class="wrap"><div class="eyebrow">06 · Key Points</div><h2>溝通重點</h2><div class="grid2">
 <div class="card"> <h3>壽險不是寶寶的優先項目</h3>
 <p>依保險法第107條（傷害保險依第135條準用），未滿 15 歲身故只能在喪葬費用限額內給付，目前所有保單合計上限 69 萬元，其餘死亡給付滿 15 歲才生效。醫療、健康保險不受此限，說明時將重點放在醫療、意外、癌症／重大傷病。</p><div class="src"><a class="out" href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0390002&amp;flno=107" target="_blank" rel="noopener noreferrer">全國法規資料庫｜保險法第107條</a><a class="out" href="https://www.fsc.gov.tw/ch/home.jsp?dataserno=202604020002&amp;dtable=News&amp;id=2&amp;mcustomize=news_view.jsp&amp;parentpath=0" target="_blank" rel="noopener noreferrer">金管會｜115年4月4日新聞稿</a><a class="out" href="https://www.mof.gov.tw/singlehtml/384fb3077bb349ea973e7fc6f13b6974?cntId=f2a148bdd1614850be9fa56df8cc9d5c" target="_blank" rel="noopener noreferrer">財政部｜115年度遺產稅喪葬費扣除額</a></div></div>
 <div class="card"> <h3>健康告知務必據實</h3>
@@ -171,7 +213,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 <div class="card"> <h3>不必一次到位</h3>
 <p>保單可隨成長階段調整：幼兒園、小學意外風險較高，中學通勤與運動也要注意。</p></div>
 </div><div class="note">話術小技巧：如果有申請到育兒津貼，也可以把它當作寶寶保費的預算來源之一。</div>
-</div></section><section id="faq"><div class="wrap"><div class="eyebrow">06 · FAQ</div><h2>常見客戶問題與回應話術</h2><div class="grid2">
+</div></section><section id="faq"><div class="wrap"><div class="eyebrow">07 · FAQ</div><h2>常見客戶問題與回應話術</h2><div class="grid2">
 <div class="card qa"><p class="q">寶寶這麼小，需要保嗎？</p>
 <p class="a">「寶寶小時候比較容易感冒、發燒或需要住院觀察，趁現在健康時規劃，通常比較容易投保。當然還是看家裡的需求和預算，我們可以先從最基本的開始了解。」</p></div>
 <div class="card qa"><p class="q">為什麼不先買壽險？</p>
@@ -180,7 +222,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 <p class="a">「健保是很好的基本保障，商業保險是補充，例如健保不給付的自費項目或住院期間的開銷。可以先看看家裡的狀況，再決定需要補多少。」</p></div>
 <div class="card qa"><p class="q">出生時有黃疸或住過保溫箱，還能保嗎？</p>
 <p class="a">「不一定不能保，最重要的是據實告知，由保險公司核保評估，結果可能是正常承保，也可能延期、除外或加費。我會陪您一起把資料準備清楚。」</p></div>
-</div></div></section><section id="chat"><div class="wrap"><div class="eyebrow">07 · Conversation</div><h2>跟新手爸媽聊天指南</h2><div class="grid1">
+</div></div></section><section id="chat"><div class="wrap"><div class="eyebrow">08 · Conversation</div><h2>跟新手爸媽聊天指南</h2><div class="grid1">
 <div class="card"> <h3>聊天注意事項</h3>
 <ul>
 <li>先關心媽媽與寶寶的狀況，不要一開口就談保單。</li>
@@ -210,7 +252,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 <li>聊育兒津貼 →「如果有申請到育兒津貼，也可以把它當作寶寶保費的預算來源之一。」</li>
 <li>聊教育基金／家庭理財 →「在規劃寶寶的同時，也可以順便看看爸媽自己的保障夠不夠。」</li>
 </ul></div><div class="media"></div></div></section>
-<section id="todo"><div class="wrap"><div class="eyebrow">08 · Checklist</div><h2>待產與出生後待辦</h2>
+<section id="todo"><div class="wrap"><div class="eyebrow">09 · Checklist</div><h2>待產與出生後待辦</h2>
 <p class="lead">陪爸媽把待產、出院和出生後要辦的事整理成清單。保障怎麼談，仍用前面的投保章節。各項給付能否申請、金額多少，以主管機關和戶籍地當時的規定為準。</p>
 <div class="grid2">
 <div class="card"><h3>待產包與證件</h3>
